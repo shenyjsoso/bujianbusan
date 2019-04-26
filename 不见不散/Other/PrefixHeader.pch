@@ -1,0 +1,92 @@
+//
+//  PrefixHeader.pch
+//  不见不散
+//
+//  Created by soso on 2017/11/28.
+//  Copyright © 2017年 soso. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+
+//#define RACObserve(TARGET, KEYPATH) \
+//({ \
+//_Pragma("clang diagnostic push") \
+//_Pragma("clang diagnostic ignored \"-Wreceiver-is-weak\"") \
+//__weak id target_ = (TARGET); \
+//[target_ rac_valuesForKeyPath:@keypath(TARGET, KEYPATH) observer:self]; \
+//_Pragma("clang diagnostic pop") \
+//})
+//NSString *value=[NSString stringWithFormat:@"Bearer %@",[SYJTool getforkey:@"accessToken"]];
+// __weak typeof (self) weakSelf = self;
+//__block SexPickerTool *blockPicker = sexPick;
+// <key>UIBackgroundModes</key> <array> <string>location</string> </array>
+
+//__weak typeof(self) weakSelf = self;
+//    __strong typeof(self) strongSelf = weakSelf;
+
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+//#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+// 如果不需要红包功能，直接把这个REDPACKET_AVALABLE宏注释掉，然后：
+// 1.删掉红包相关代码：注释掉后，建议在xcode中搜索“REDPACKET_AVALABLE”，然后删掉相关代码；
+//#define REDPACKET_AVALABLE
+
+// 如果不需要语音通话功能，直接把这个宏注释掉或者改成0，然后：
+// 1.删掉音视频相关代码：注释掉后，建议在xcode中搜索“DEMO_CALL”，然后删掉相关代码；
+// 2.隐藏音视频通话按钮：EaseChatBarMoreView.m  第115-131行代码注释掉。
+//#define DEMO_CALL 1 // 1：启用音视频通话；0：禁用音视频通话
+
+#ifdef __OBJC__
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "ChatUIDefine.h"
+#import "EMAlertView.h"
+//#import "TTGlobalUICommon.h"
+
+#import <AVKit/AVKit.h>
+#import "EaseUI.h"
+#import "AppConfig.h"                   //常用宏定义文件
+
+#import <Masonry.h>
+#import "HttpTool.h"
+#import "SYJTool.h"
+#import <MBProgressHUD.h>
+#import "SYJProgressHUD.h"
+#import <MJExtension/MJExtension.h>
+
+#import "UIView+SYJUIView.h"
+#import <MJRefresh/MJRefresh.h>
+
+#import <UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+//#import <UIImage+GIF.h>
+
+//#if DEMO_CALL == 1
+//#import <Hyphenate/Hyphenate.h>// 包含音视频通话功能
+//#else
+#import <HyphenateLite/HyphenateLite.h>// 不包含音视频通话功能
+//#endif
+//
+
+#import "UserCacheManager.h"
+//#import "UserWebManager.h"
+#import "YYCategories.h"
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+#endif
+

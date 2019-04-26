@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SYJInterestCollectionViewCell" id="gTV-IL-0wX" customClass="SYJInterestCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="157"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wue-g9-OBs">
+                        <rect key="frame" x="5" y="5" width="191" height="147"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Wue-g9-OBs" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" constant="5" id="LFM-2t-hUh"/>
+                <constraint firstItem="Wue-g9-OBs" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="cR0-4e-Nje"/>
+                <constraint firstItem="Wue-g9-OBs" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="hPP-FL-k0G"/>
+                <constraint firstItem="Wue-g9-OBs" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" constant="5" id="mke-gc-JHP"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="Wue-g9-OBs" secondAttribute="trailing" constant="5" id="nfH-zb-hQh"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="Wue-g9-OBs" secondAttribute="bottom" constant="5" id="tjn-VN-BRK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="201" height="157"/>
+            <connections>
+                <outlet property="interestLbl" destination="Wue-g9-OBs" id="6Xv-ks-3aN"/>
+            </connections>
+            <point key="canvasLocation" x="-44.5" y="90.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

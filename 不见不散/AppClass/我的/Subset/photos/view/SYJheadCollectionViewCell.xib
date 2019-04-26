@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SYJheadCollectionViewCell" id="gTV-IL-0wX" customClass="SYJheadCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOU-V0-N78">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="169"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="kOU-V0-N78" secondAttribute="bottom" id="501-yV-RNo"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="kOU-V0-N78" secondAttribute="trailing" id="CUA-3T-tAd"/>
+                <constraint firstItem="kOU-V0-N78" firstAttribute="leading" secondItem="SEy-5g-ep8" secondAttribute="leading" id="dFp-Hb-VLN"/>
+                <constraint firstItem="kOU-V0-N78" firstAttribute="top" secondItem="SEy-5g-ep8" secondAttribute="top" id="uVV-Ql-4du"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="174" height="169"/>
+            <connections>
+                <outlet property="myImage" destination="kOU-V0-N78" id="tz3-cR-7hA"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="94.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
